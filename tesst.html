@@ -1,4 +1,4 @@
-<script>
+
 var fs = require('fs')
 var conversion = require("phantom-html-to-pdf")();
 conversion.allowLocalFilesAccess = false
@@ -8,4 +8,4 @@ console.log(pdf.logs);
 console.log(pdf.numberOfPages);
 pdf.stream.pipe(output);
 });
-</script>
+
